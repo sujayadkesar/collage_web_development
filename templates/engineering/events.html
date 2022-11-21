@@ -1,0 +1,54 @@
+{% extends 'engineering/engineering_base.html' %}
+{% load static %}
+{% block title %}
+Srinivas University - INSTITUTE OF ENGINEERING AND TECHNOLOGY
+{% endblock %}
+{% block content %}
+{% include 'engineering/navbar.html' %}
+
+<section class="py-3 mt-4 mb-4 ">
+    <div class="container fade-in" style="margin-top: 0px;">
+        <div class="row ">
+            <div class="col-md-8 col-xl-10 text-center mx-auto">
+                <h2 class="fw-bold">INSTITUTE OF ENGINEERING AND TECHNOLOGY</h2>
+                <p class="text-muted w-lg-50">Success is the sum of details - Harvey Firestone</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container ">
+    <h4 class="fw-bold text-left mt-4">Events</h4>
+    <hr/>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        
+        
+        {% for event in event %}
+        <div class="col">
+          <div class="card h-100" >
+            <a href="{% url 'engineering_events_details' event.Title %}" style="text-decoration: none;">
+            <img src="{{event.Image.url}}" class="card-img-top" height="200" alt="Skyscrapers"/>
+            <div class="card-body" style=" overflow: hidden; height: 100px ;">
+              <h5 class="card-title fw-bold">{{event.Title}}</h5>
+              <p class="card-text" >
+                {{event.discription}}
+              </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">{{event.date}}</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+
+
+      </div>
+
+
+</div>
+
+
+
+{% include 'footer.html' %}
+{% endblock %}

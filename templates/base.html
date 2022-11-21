@@ -17,7 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 
 
-
+  
     <link rel="icon" href="{% static 'img/Srinivas_University_logo.gif' %}">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -33,7 +33,19 @@
     <link rel="stylesheet" href="{% static 'css/Profile-Card.css' %}">
     <link rel="stylesheet" href="{% static 'css/Section-Title.css' %}">
 
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
 <style>
+  body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-image: url("{% static 'img/background.jpg' %}");
+    background-repeat: repeat-y;
+  }
   .reveal{
     position: relative;
     transform: translateY(150px);
@@ -44,6 +56,22 @@
   .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+  }
+  footer{
+    background-image: url("{% static 'img/university-life.jpeg' %}");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
   }
 </style>
 
@@ -69,5 +97,30 @@
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- MDB -->
     <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <script>
+      if ( window.history.replaceState){
+        window.history.replaceState(null, null, window.location.href);
+      }
+    </script>
+    <script text="text/javascript">
+      window.addEventListener('scroll', reveal);
+
+      function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+
+          for(var i = 0; i < reveals.length; i++){
+
+              var windowheight = window.innerHeight;
+              var revealtop = reveals[i].getBoundingClientRect().top;
+              var revealpoint = 150;
+
+              if(revealtop < windowheight - revealpoint){
+                  reveals[i].classList.add('active');
+              }else{
+                  reveals[i].classList.remove('active');
+              }
+          }
+      }
+  </script>
   </body>
 </html>

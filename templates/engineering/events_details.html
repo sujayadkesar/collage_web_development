@@ -1,0 +1,117 @@
+{% extends 'engineering/engineering_base.html' %}
+{% load static %}
+{% block title %}
+Srinivas University - INSTITUTE OF ENGINEERING AND TECHNOLOGY
+{% endblock %}
+{% block content %}
+{% include 'engineering/navbar.html' %}
+
+<section class="py-3 mt-4 mb-4 ">
+    <div class="container fade-in" style="margin-top: 0px;">
+        <div class="row ">
+            <div class="col-md-8 col-xl-10 text-center mx-auto">
+                <h2 class="fw-bold">INSTITUTE OF ENGINEERING AND TECHNOLOGY</h2>
+                <p class="text-muted w-lg-50">Success is the sum of details - Harvey Firestone</p>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .nine h1 {
+        text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+        font-family:"Playfair Display", serif; font-weight:400;
+      }
+      .nine h1 span {
+        margin-top: 5px;
+          font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+          text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+      
+          display: grid;
+          grid-template-columns: 1fr max-content 1fr;
+          grid-template-rows: 27px 0;
+          grid-gap: 20px;
+          align-items: center;
+      }
+      
+      .nine h1 span:after,.nine h1 span:before {
+          content: " ";
+          display: block;
+          border-bottom: 1px solid #ccc;
+          border-top: 1px solid #ccc;
+          height: 5px;
+        background-color:#f8f8f8;
+      }
+</style>
+{% for event in event %}
+<div class="nine container">
+    <h1>{{event.Title}}<span>{{event.date}}</span></h1>
+</div>
+<div class="container">
+    <p>
+        {{event.discription}}
+    </p>
+
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/lights.jpg">
+              <img src="{{event.Image.url}}" alt="Lights" height="300" style="width:100%">
+            </a>
+          </div>
+        </div>
+        {% if event.Image2 %}
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/nature.jpg">
+              <img src="{{event.Image2.url}}" alt="Nature" height="300" style="width:100%">
+            </a>
+          </div>
+        </div>
+        {% endif %}
+        {% if event.Image3 %}
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/fjords.jpg">
+              <img src="{{event.Image3.url}}" alt="Fjords" height="300" style="width:100%">
+            </a>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="row mt-4">
+        {% if event.Image4 %}
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/lights.jpg">
+              <img src="{{event.Image4.url}}" alt="Lights" height="300" style="width:100%">
+            </a>
+          </div>
+        </div>
+        {% endif %}
+        {% if event.Image5 %}
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/nature.jpg">
+              <img src="{{event.Image5.url}}" alt="Nature" height="300" style="width:100%">
+            </a>
+          </div>
+        </div>
+        {% endif %}
+        {% if event.Image6 %}
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/fjords.jpg">
+              <img src="{{event.Image6.url}}" alt="Fjords" height="300" style="width:100%">
+            </a>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+</div>
+
+{% endfor %}
+
+
+{% include 'footer.html' %}
+{% endblock %}

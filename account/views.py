@@ -18,7 +18,7 @@ def Login(request):
                 login(request, user)
                 messages.success(request, "logged in")
                 print("hi")
-                return redirect("/")
+                return redirect("home")
             else:
                 messages.error(request, "invalid username and password")
                 a="username and password is error"
@@ -26,5 +26,3 @@ def Login(request):
         
         return render(request, "registration/Login.html")
     
-def homepage(request):
-    return render(request, "home.html")
