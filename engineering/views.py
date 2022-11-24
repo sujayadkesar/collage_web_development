@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, Group
 from .models import NoticeBoard_Engineering,Events
 
+
 # Create your views here.
 def engineering_homepage(request):
     if request.user.is_authenticated:
