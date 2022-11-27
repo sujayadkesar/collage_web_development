@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, Group
-from .models import NoticeBoard_Engineering,Events
+from .models import NoticeBoard_Engineering,Events,Faculty
 
 
 # Create your views here.
@@ -36,3 +36,10 @@ def engineering_event_page_details(request,name):
         "event":Event
     }
     return render(request, 'engineering/events_details.html',context)
+
+def cs_department_overview(request):
+    faculty = Faculty.objects.all()
+    context = {
+        'faculty':faculty
+    }
+    return render(request, 'engineering/departments/overview/cs_overview.html', context)

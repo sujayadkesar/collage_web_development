@@ -21,4 +21,19 @@ class Events(models.Model):
     date = models.DateField( auto_now=False, auto_now_add=False)
     def __str__(self):
         return self.Title
+    
+class Faculty(models.Model):
+    name  = models.CharField( max_length=50)
+    image = models.ImageField( upload_to='static/img/Engineeringimage/Faculty', height_field=None, width_field=None, max_length=None)
+    qualification = models.TextField()
+    description =models.CharField( max_length=50)
+    Designation = models.CharField( max_length=50)
+    Teaching_Experience = models.IntegerField()
+    Industry_Experience = models.IntegerField()
+    Research_Experience = models.IntegerField()
+    
+
+    def __str__(self):
+        return self.name
+
 

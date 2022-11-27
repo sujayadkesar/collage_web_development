@@ -123,7 +123,7 @@
       
   </style>
 
-  <div class="container reveal">
+  <div class="container ">
 
     <div class="seven">
       <h1 class="fw-bold text-center mb-4 p-3" >Dean's Desk</h1>
@@ -151,7 +151,7 @@
       <h1 class="fw-bold">Departments</h1>
     </div>
 
-    <div class="container mt-4 mb-4 reveal">
+    <div class="container mt-4 mb-4 reveal ">
       <div class="card-deck">
         <div class="col col-sm-6 col-md-3 mt-4">
           <div class="card h-100">
@@ -265,12 +265,13 @@
           <h1 class="fw-bold">Announcement</h1>
         </div>
         <div class="overflow-auto mt-4" style="height: 450px;">
+          <ul class="list-group list-group-light ">
           {% for news in news %}
             {% comment %} <div class="mt-4">
               <h5 class="card-header">{{ news.title }}</h5>
               <div class="card-body">{{ news.content }}</div>
             </div> {% endcomment %}
-            <div class="alert alert-info"  role="alert">
+            {% comment %} <div class="alert alert-info"  role="alert">
               <div class="row">
                 <div class="col-sm-8">
                   <h6 class="alert-heading alert-link">{{ news.title }}</h6>
@@ -280,8 +281,17 @@
                 </div>
               </div>
               <p class="text-truncate h6" style="max-width: 400px;">{{ news.content }}</p>
-            </div>
-          {% endfor %}
+            </div> {% endcomment %}
+            
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <div>
+                  <div class="fw-bold">{{ news.title }}        {{ news.date }}</div>
+                  <div class="text-muted">{{ news.content }}</div>
+                </div>
+                <span class="badge rounded-pill badge-danger">New</span>
+              </li>
+              {% endfor %}
+            </ul>
         </div>
       </div>
     </div>

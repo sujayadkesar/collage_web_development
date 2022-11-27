@@ -1,0 +1,524 @@
+
+{% extends 'engineering/engineering_base.html' %}
+{% load static %}
+{% block title %}
+  Srinivas University - INSTITUTE OF ENGINEERING AND TECHNOLOGY
+{% endblock %}
+{% block content %}
+  {% include 'engineering/navbar.html' %}
+
+
+<div class="container mt-4 p-4">
+    <div class="row">
+        <div class="col-4">
+          <div class="list-group list-group-light" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active px-3 border-0" id="list-home-list"
+              data-mdb-toggle="list" href="#list-overview" role="tab" aria-controls="list-home">Overview</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-profile-list"
+              data-mdb-toggle="list" href="#list-vision-mission" role="tab" aria-controls="list-profile">Vision and Mission</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-messages-list"
+              data-mdb-toggle="list" href="#list-Faculty" role="tab" aria-controls="list-messages">Faculty</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-syllabus" role="tab" aria-controls="list-settings">Syllabus</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Teaching-Plan" role="tab" aria-controls="list-settings">Teaching Plan</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Acadamic-Calender" role="tab" aria-controls="list-settings">Acadamic Calender</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Study-Material" role="tab" aria-controls="list-settings">Study Material</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Question-Bank" role="tab" aria-controls="list-settings">Question Bank</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Student-Club" role="tab" aria-controls="list-settings">Student Club</a>
+              <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Industry-Visit" role="tab" aria-controls="list-settings">Industry Visit</a>
+              <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Workshop" role="tab" aria-controls="list-settings">Workshop / Seminar</a>
+              <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Placement" role="tab" aria-controls="list-settings">Placement</a>
+              <a class="list-group-item list-group-item-action px-3 border-0" id="list-settings-list"
+              data-mdb-toggle="list" href="#list-Alumini" role="tab" aria-controls="list-settings">Alumini</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-overview" role="tabpanel"
+              aria-labelledby="list-home-list">
+              <div class="container">
+                
+                <p class="mt-2">
+                    The department of Computer Science & Engineering was started in the time 2013 with a pupil input of 60 to feed to the requirements of software diligence. Further, the input was increased to 120 in the time 2009 and latterly to 180 in the time 2014. In order to produce specialization incorporating unborn chops specified by global top- notch companies and grounded on their conditions, the institute has added more technical programs in confluence with Computer Science & Engineering.
+                </p>
+                <h5 class="fw-bold">About the Course</h5>
+                <p>The B.Tech degree in Computer Science and Engineering at Srinivas University is aimed at nurturing and developing professionals of the high quality to cater to the needs of industry and academia. The credit based curriculum is focused on industry-linking, technology-orientation and research which mirrors the principles of Srinivas University of pursuit of knowledge. Apart from offering common core subjects, extends to its graduates the flexibility to select from a wide range of elective subjects, which enables them to gain domain knowledge and practice-oriented learning in the key aspects of Computer Science and Engineering—as well as latest academic insights into the salient advancements and emerging technologies. Electives thus offered aim at equipping graduates with the skills and expertise required to design and develop computer software that is applied to diverse system based environments; computing solutions for optimizing and enhancing the performance of systems; and computers to solve challenges in areas such as robotics, computer vision, Security, image processing , pattern recognition techniques, machine learning and emerging technologies.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-vision-mission" role="tabpanel" aria-labelledby="list-profile-list">
+              <div>
+
+                <div class="container p-3">
+                    <h4 class="fw-bold" >VISION AND MISSION</h4>
+                    <hr style="width: auto;">
+                    <h5 class="fw-bold" >VISION</h5>
+                    <p s>To advance the state of the art in computer science and engineering by working on cutting edge research topics, publishing quality research papers and filing enduring patents.
+                    </p>
+                    <h5 class="fw-bold">MISSION</h5>
+                    <p >Imparting strong establishments and connected angles in both Computer Science Theory and Programming rehearses
+
+                        Providing preparing and empowering R and D and Consultancy Services in wilderness regions of Computer Science and Engineering with a Global viewpoint
+                        
+                        Fostering the most elevated goals of morals, values and making consciousness of the job of Computing in Global Environment
+                        
+                        Educating and setting up the alumni, very looked for after, profitable, and all around regarded for their work culture.</p>
+                    <h5 class="fw-bold" >DEPARTMENT CONTACT</h5>
+                    <p class="fw-bold" >Dr. Netravathi P S</p>
+                    <p  style="margin-top: -20px;">BTech, MTech, PhD</p>
+                  </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-Faculty" role="tabpanel" aria-labelledby="list-messages-list">
+              
+                <div class="container">
+
+                    {% comment %} <ul class="list-group list-group-light">
+                        {% for faculty in faculty  %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-4 mt-2">
+                          <div class="d-flex align-items-center">
+                            <img src="{{faculty.image.url}}" alt="" style="width: 45px; height: 45px"
+                              class="rounded-circle" />
+                            <div class="ms-3">
+                              <p class="fw-bold mb-1">{{faculty.name}}</p>
+                            <p class="text-muted mb-0">{{faculty.Designation}}</p>
+                            </div>
+                          </div>
+                          <span class="badge rounded-pill badge-success">More details</span>
+                        </li>
+                        {% endfor %}
+                        
+                        
+                      </ul> {% endcomment %}
+
+
+
+                      <table class="table align-middle mb-0 bg-white">
+                        <thead class="bg-light">
+                            
+                          <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Qualification</th>
+                            <th>Experience</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            {% for faculty in faculty  %}
+                          <tr>
+                            <td>
+                                <p class="fw-bold text-muted p-2">1</p>
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img
+                                    src="{{faculty.image.url}}"
+                                    class="rounded-circle"
+                                    alt=""
+                                    style="width: 45px; height: 45px"
+                                    />
+                                <div class="ms-3">
+                                  <p class="fw-bold mb-1">{{faculty.name}}</p>
+                                  <p class="text-muted mb-0">{{faculty.Designation}}</p>
+                                </div>
+                              </div>
+                            </td>
+                            
+                            <td>
+                                {{faculty.qualification}}
+                            </td>
+                            <td>{{faculty.Teaching_Experience}} Years</td>
+                            <td>
+                              <button
+                                      type="button"
+                                      class="btn btn-link btn-rounded btn-sm fw-bold"
+                                      data-mdb-ripple-color="dark"
+                                      style="text-decoration: none;"
+                                      >
+                                view
+                              </button>
+                            </td>
+                          </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="list-syllabus" role="tabpanel" aria-labelledby="list-settings-list">
+              
+                <div class="container">
+
+                    <div class="accordion" id="accordionExampleY">
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOneY">
+                            <a class="accordion-button" type="button" data-mdb-toggle="collapse"
+                              data-mdb-target="#collapseOneY" aria-expanded="true" aria-controls="collapseOneY">
+                              <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>1st Semester
+                          </a>
+                          </h2>
+                          <div id="collapseOneY" class="accordion-collapse collapse show" aria-labelledby="headingOneY"
+                            data-mdb-parent="#accordionExampleY">
+                            <div class="accordion-body" style="height: 600px;">
+                                type anything
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwoY">
+                            <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                              data-mdb-target="#collapseTwoY" aria-expanded="false" aria-controls="collapseTwoY">
+                              <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>2nd Semester
+                          </a>
+                          </h2>
+                          <div id="collapseTwoY" class="accordion-collapse collapse" aria-labelledby="headingTwoY"
+                            data-mdb-parent="#accordionExampleY" >
+                            <div class="accordion-body" style="height: 600px;">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by
+                              default, until the collapse plugin adds the appropriate classes that we use to
+                              style each element. These classes control the overall appearance, as well as
+                              the showing and hiding via CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables. It's also worth noting that
+                              just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThreeY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseThreeY" aria-expanded="false" aria-controls="collapseThreeY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>3rd Semester
+                            </a>
+                            </h2>
+                            <div id="collapseThreeY" class="accordion-collapse collapse" aria-labelledby="headingThreeY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <iframe src="{% static 'pdf/engineering/cs_department/Syllabus_3rd_Sem.pdf' %}" frameborder="0" style="height: 100%; width: 100%;"></iframe>
+
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfourY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapsefourY" aria-expanded="false" aria-controls="collapsefourY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>4th Semester
+                            </a>
+                            </h2>
+                            <div id="collapsefourY" class="accordion-collapse collapse" aria-labelledby="headingfourY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to
+                                style each element. These classes control the overall appearance, as well as
+                                the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfiveY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapsefiveY" aria-expanded="false" aria-controls="collapsefiveY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>5th Semester
+                            </a>
+                            </h2>
+                            <div id="collapsefiveY" class="accordion-collapse collapse" aria-labelledby="headingfiveY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to
+                                style each element. These classes control the overall appearance, as well as
+                                the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSixY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseSixY" aria-expanded="false" aria-controls="collapseSixY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>6th Semester
+                            </a>
+                            </h2>
+                            <div id="collapseSixY" class="accordion-collapse collapse" aria-labelledby="headingSixY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to
+                                style each element. These classes control the overall appearance, as well as
+                                the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSevenY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseSevenY" aria-expanded="false" aria-controls="collapseSevenY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>7th Semester
+                            </a>
+                            </h2>
+                            <div id="collapseSevenY" class="accordion-collapse collapse" aria-labelledby="headingSevenY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to
+                                style each element. These classes control the overall appearance, as well as
+                                the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingEightY">
+                            <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                              data-mdb-target="#collapseEightY" aria-expanded="false" aria-controls="collapseEightY">
+                              <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>8th Semester
+                          </a>
+                          </h2>
+                          <div id="collapseEightY" class="accordion-collapse collapse" aria-labelledby="headingEightY"
+                            data-mdb-parent="#accordionExampleY">
+                            <div class="accordion-body" style="height: 600px;">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by
+                              default, until the collapse plugin adds the appropriate classes that we use to
+                              style each element. These classes control the overall appearance, as well as
+                              the showing and hiding via CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables. It's also worth noting that
+                              just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+
+
+            </div>
+            
+            <div class="tab-pane fade" id="list-Teaching-Plan" role="tabpanel" aria-labelledby="list-settings-list">
+                
+                <div class="container">
+
+                    <div class="accordion" id="accordionExampleY">
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOneY">
+                            <a class="accordion-button" type="button" data-mdb-toggle="collapse"
+                              data-mdb-target="#collapseOneY" aria-expanded="true" aria-controls="collapseOneY">
+                              <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>1st Semester
+                          </a>
+                          </h2>
+                          <div id="collapseOneY" class="accordion-collapse collapse show" aria-labelledby="headingOneY"
+                            data-mdb-parent="#accordionExampleY">
+                            <div class="accordion-body" style="height: 600px;">
+                                <iframe src="{% static 'pdf/engineering/cs_department/teaching_plan_1st_sem.pdf' %}" frameborder="0" style="height: 100%; width: 100%;"></iframe>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwoY">
+                            <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                              data-mdb-target="#collapseTwoY" aria-expanded="false" aria-controls="collapseTwoY">
+                              <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>2nd Semester
+                          </a>
+                          </h2>
+                          <div id="collapseTwoY" class="accordion-collapse collapse" aria-labelledby="headingTwoY"
+                            data-mdb-parent="#accordionExampleY" >
+                            <div class="accordion-body" style="height: 600px;">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by
+                              default, until the collapse plugin adds the appropriate classes that we use to
+                              style each element. These classes control the overall appearance, as well as
+                              the showing and hiding via CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables. It's also worth noting that
+                              just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThreeY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseThreeY" aria-expanded="false" aria-controls="collapseThreeY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>3rd Semester
+                            </a>
+                            </h2>
+                            <div id="collapseThreeY" class="accordion-collapse collapse" aria-labelledby="headingThreeY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <iframe src="{% static 'pdf/engineering/cs_department/Syllabus_3rd_Sem.pdf' %}" frameborder="0" style="height: 100%; width: 100%;"></iframe>
+
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfourY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapsefourY" aria-expanded="false" aria-controls="collapsefourY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>4th Semester
+                            </a>
+                            </h2>
+                            <div id="collapsefourY" class="accordion-collapse collapse" aria-labelledby="headingfourY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to
+                                style each element. These classes control the overall appearance, as well as
+                                the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfiveY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapsefiveY" aria-expanded="false" aria-controls="collapsefiveY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>5th Semester
+                            </a>
+                            </h2>
+                            <div id="collapsefiveY" class="accordion-collapse collapse" aria-labelledby="headingfiveY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to
+                                style each element. These classes control the overall appearance, as well as
+                                the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSixY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseSixY" aria-expanded="false" aria-controls="collapseSixY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>6th Semester
+                            </a>
+                            </h2>
+                            <div id="collapseSixY" class="accordion-collapse collapse" aria-labelledby="headingSixY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to
+                                style each element. These classes control the overall appearance, as well as
+                                the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSevenY">
+                              <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseSevenY" aria-expanded="false" aria-controls="collapseSevenY">
+                                <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>7th Semester
+                            </a>
+                            </h2>
+                            <div id="collapseSevenY" class="accordion-collapse collapse" aria-labelledby="headingSevenY"
+                              data-mdb-parent="#accordionExampleY">
+                              <div class="accordion-body" style="height: 600px;">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by
+                                default, until the collapse plugin adds the appropriate classes that we use to
+                                style each element. These classes control the overall appearance, as well as
+                                the showing and hiding via CSS transitions. You can modify any of this with
+                                custom CSS or overriding our default variables. It's also worth noting that
+                                just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingEightY">
+                            <a class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                              data-mdb-target="#collapseEightY" aria-expanded="false" aria-controls="collapseEightY">
+                              <i class="fas fa-pencil fa-sm me-2 opacity-70"></i>8th Semester
+                          </a>
+                          </h2>
+                          <div id="collapseEightY" class="accordion-collapse collapse" aria-labelledby="headingEightY"
+                            data-mdb-parent="#accordionExampleY">
+                            <div class="accordion-body" style="height: 600px;">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by
+                              default, until the collapse plugin adds the appropriate classes that we use to
+                              style each element. These classes control the overall appearance, as well as
+                              the showing and hiding via CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables. It's also worth noting that
+                              just about any HTML can go within the <code>.accordion-body</code>, though the
+                              transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="list-Acadamic-Calender" role="tabpanel" aria-labelledby="list-settings-list">
+                calender
+              </div>
+              <div class="tab-pane fade" id="list-Study-Material" role="tabpanel" aria-labelledby="list-settings-list">
+                study material
+              </div>
+              <div class="tab-pane fade" id="list-Question-Bank" role="tabpanel" aria-labelledby="list-settings-list">
+                question bank
+             </div>
+             <div class="tab-pane fade" id="list-Student-Club" role="tabpanel" aria-labelledby="list-settings-list">
+                student club
+             </div>
+              <div class="tab-pane fade" id="list-Industry-Visit" role="tabpanel" aria-labelledby="list-settings-list">
+                 iv
+              </div>
+              <div class="tab-pane fade" id="list-Workshop" role="tabpanel" aria-labelledby="list-settings-list">
+                workshop
+              </div>
+              <div class="tab-pane fade" id="list-Placement" role="tabpanel" aria-labelledby="list-settings-list">
+                placement
+              </div>
+              <div class="tab-pane fade" id="list-Alumini" role="tabpanel" aria-labelledby="list-settings-list">
+                alumini
+              </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+  {% include 'footer.html' %}
+  {% endblock %}
