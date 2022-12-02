@@ -26,11 +26,12 @@ class Faculty(models.Model):
     name  = models.CharField( max_length=50)
     image = models.ImageField( upload_to='static/img/Engineeringimage/Faculty', height_field=None, width_field=None, max_length=None)
     qualification = models.TextField()
-    description =models.CharField( max_length=50)
-    Designation = models.CharField( max_length=50)
-    Teaching_Experience = models.IntegerField()
-    Industry_Experience = models.IntegerField()
-    Research_Experience = models.IntegerField()
+    description =models.CharField( max_length=50,null=True)
+    Designation = models.CharField( max_length=50,null=True)
+    Email = models.EmailField(max_length=254)
+    Teaching_Experience = models.IntegerField(null=True)
+    Industry_Experience = models.IntegerField(null=True)
+    Research_Experience = models.IntegerField(null=True)
     
 
     def __str__(self):

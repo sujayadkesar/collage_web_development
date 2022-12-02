@@ -5,11 +5,11 @@
         <a  data-bs-toggle="collapse" class="navbar-toggler mr-4" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="fas fa-bars"></span></a>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link active " href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active " href="{% url 'engineering' %}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'engineering' %}#department">Department</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="pricing.html">About US</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
             </ul>
         </div>
     </div>

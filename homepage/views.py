@@ -33,3 +33,19 @@ def profile(request):
             'profile': profile
         }
         return render(request,'profile.html',context)
+
+def gallery(request):
+    user = User.objects.get(username=request.user.username)
+    profile = Profile.objects.get(user=user)
+    context = {
+        'profile': profile
+    }
+    return render(request,'gallery.html',context)
+
+def about(request):
+    user = User.objects.get(username=request.user.username)
+    profile = Profile.objects.get(user=user)
+    context = {
+        'profile': profile
+    }
+    return render(request,'about.html',context)

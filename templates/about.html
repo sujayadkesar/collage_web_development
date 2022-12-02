@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Srinivas University
+{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<section class="py-3 mt-4 mb-4 ">
+    <div class="container fade-in" style="margin-top: 0px;">
+      <div class="row">
+        <div class="col-md-8 col-xl-10 text-center mx-auto">
+          <h1 class="fw-bold">SRINIVAS UNIVERSITY</h1>
+          <p class="text-muted w-lg-50">" The whole purpose of education is to turn mirros into windows "</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <img src="{% static 'img/srinivas.jpg' %}" alt="">
+        </div>
+        <div class="col-6">
+            <p>Srinivas University, Mangalore, is a Private Research and skill focused University in Mangalore, Karnataka, India established in 2013 by Karnataka State Act.Srinivas University is the flagship of 18 Srinivas Group of Institutions started by A. Shama Rao Foundation, Mangalore, India, a private Charitable Trust founded in 1988 by an Eminent Chartered Accountant A. Raghavendra Rao.
+
+                A. Shama Rao Foundation has started many professional colleges in Mangalore which include Srinivas Institute of Medical Sciences and Research Center, Srinivas Institute of Dental Sciences, Srinivas Institute of Technology, Srinivas College of Pharmacy, Srinivas Institute of Nursing Sciences, A Shama Rao Nursing School, Srinivas Integrated Campus, Srinivas College of Hotel Management, Vijayalakshmi Institute of Hospitality Sciences, Srinivas First Grade College, Srinivas School of Engineering, Srinivas Institute of Management Studies, Srinivas College of Physiotherapy, Srinivas School of Business, Srinivas School of Management, Srinivas College of Education, Srinivas Institute of Social Work.
+                
+                Presently, Srinivas University offers undergraduate, postgraduate, and research courses under 9 Faculties/Institutes with about 71 courses. The University made innovations in designing and starting new super speciality programmes both in UG, and PG level as per present and future industry relevance, innovations in examination system through focus on continuous evaluation and to make it foolproof.
+                
+                University has established networking with many industries, universities, and Education service providers to substantially improve the quality and weightage of the courses and degrees respectively. Presently Srinivas University has Nine Institutes offering innovative industry oriented specialized courses of UG, PG, and Research levels.</p>
+        </div>
+    </div>
+    
+   
+  </div>
+
+{% include 'footer.html' %}
+{% endblock %}

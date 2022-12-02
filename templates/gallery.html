@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Srinivas University
+{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<section class="py-3 mt-4 mb-4 ">
+    <div class="container fade-in" style="margin-top: 0px;">
+      <div class="row">
+        <div class="col-md-8 col-xl-10 text-center mx-auto">
+          <h2 class="fw-bold">Srinivas University</h2>
+          <p class="text-muted w-lg-50">" THE WHOLE PURPOSE OF EDUCATION IS TO TURN MIRROS INTO WINDOWS "</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="container">
+
+    <!-- Modal gallery -->
+<section class="">
+    <!-- Section: Images -->
+    <section class="">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://srinivasuniversity.edu.in/et/images/abt-bg1.jpg"
+              class="w-100" height="250"
+            />
+            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://srinivasuniversity.edu.in/education/images/about/abt-bg1.jpg"
+              class="w-100" height="250"
+            />
+            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img
+              src="https://srinivasuniversity.edu.in/et/images/abt-bg1.jpg"
+              class="w-100" height="250"
+            />
+            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Images -->
+  
+    <!-- Section: Modals -->
+    <section class="">
+      <!-- Modal 1 -->
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        aria-labelledby="exampleModal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/HJV_26qZHFY"
+                title="YouTube video"
+                allowfullscreen
+              ></iframe>
+            </div>
+  
+            <div class="text-center py-3">
+              <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 2 -->
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModal2Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/HJV_26qZHFY"
+                title="YouTube video"
+                allowfullscreen
+              ></iframe>
+            </div>
+  
+            <div class="text-center py-3">
+              <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 3 -->
+      <div
+        class="modal fade"
+        id="exampleModal3"
+        tabindex="-1"
+        aria-labelledby="exampleModal3Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://youtu.be/HJV_26qZHFY"
+                title="YouTube video"
+                allowfullscreen
+              ></iframe>
+            </div>
+  
+            <div class="text-center py-3">
+              <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Modals -->
+  </section>
+  <!-- Modal gallery -->
+
+
+    <!-- Gallery -->
+<div class="row mt-4">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+  <!-- Gallery -->
+</div>
+
+{% endblock %}

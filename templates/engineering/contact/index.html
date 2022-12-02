@@ -1,0 +1,115 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <link rel="icon" href="{% static 'img/Srinivas_University_logo.gif' %}">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srinivas University</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        background-image: url("{% static 'img/background.jpg' %}");
+        background-repeat: repeat-y;
+      }
+    
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <div style="display:flex; height: 75px;">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Srinivas_University_logo.gif" alt="Srinivas University" width="75" style="padding: 1px; ">
+          <h3 class="title" style="text-align:center; justify-content:center; color:rgb(0, 0, 0)">Srinivas University</h3>
+          </div>
+          <p class="text">
+            A University should be a place of Light, of Liberty, and of Learning.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <a href="https://www.google.com/maps/place/Srinivas+University/@13.0197736,74.7924707,18z/data=!4m5!3m4!1s0x3ba352113ffb7753:0x55748a891457f561!8m2!3d13.0219563!4d74.7930356">Chelairu Road Srinivas Nagar, Mukka, Surathkal, Mangaluru, Karnataka</a>
+              
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <a href="mailto:admission@srinivasuniversity.edu.in ">admission@srinivasuniversity.edu.in</a>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>+91-8242444891</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/SrinivasUniversityRegistrar">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/SrinivasGroup">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/srinivas.university/">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/srinivasgroup">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Name</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'js/app.js' %}"></script>
+  </body>
+</html>

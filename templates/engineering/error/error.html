@@ -1,0 +1,26 @@
+{% extends 'engineering/engineering_base.html' %}
+{% load static %}
+{% block title %}
+  Srinivas University - INSTITUTE OF ENGINEERING AND TECHNOLOGY
+{% endblock %}
+{% block content %}
+  {% include 'engineering/navbar.html' %}
+
+  <section class="py-3 mt-4 mb-4 ">
+    <div class="container fade-in" style="margin-top: 0px;">
+      <div class="row">
+        <div class="col-md-8 col-xl-10 text-center mx-auto">
+          <h2 class="fw-bold">INSTITUTE OF ENGINEERING AND TECHNOLOGY</h2>
+          <p class="text-muted w-lg-50">Success is the sum of details - Harvey Firestone</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container text-center">
+    <h1>Sorry for the inconvinence</h1>
+    <p>this page is only accessible for the engineering student</p>
+    <p>if you are a engineering student in srinivas please login with registered username </p>
+  </div>
+
+{% endblock %}

@@ -52,16 +52,18 @@
         background-color:#f8f8f8;
       }
       
+    
+      
       
   </style>
 
-    <div class="container mt-4">
+    <div class="container mt-4 text-justify">
         <div class="three">
             <h1 class="fw-bold">OVERVIEW OF <br>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h1>
         </div>
         <div class="row">
-            <div class="col-lg-9 col-md-12">
-                <p class="mt-2">
+            <div class="col-lg-9 col-md-12 text-justify">
+                <p class="mt-2 text-justify">
                     The department of Computer Science & Engineering was started in the time 2013 with a pupil input of 60 to feed to the requirements of software diligence. Further, the input was increased to 120 in the time 2009 and latterly to 180 in the time 2014. In order to produce specialization incorporating unborn chops specified by global top- notch companies and grounded on their conditions, the institute has added more technical programs in confluence with Computer Science & Engineering.
                 </p>
                 <h5 class="fw-bold">About the Course</h5>
@@ -252,8 +254,107 @@
                 </div>
             </div>
         </div>
-    </div>
+      </div>
+
+
+      <div class="container-fluid mt-4">
+        <div style="background: linear-gradient(to bottom, transparent 0%,transparent 19%,#89ABE3FF 19%,#89ABE3FF 100%);">
+          <div class="row">
+            <div class="col-lg-4 col-12 flex text-center ">
+              <img class="img-fluid p-5" src="{% static 'img/Engineeringimage/Faculty/netravathi.jpg' %}" alt="">
+            </div>
+            <div class="col-lg-8 col-12">
+              <h1 class="fw-bold  text-lg-start text-center ">HOD's Message</h1>
+              <hr width="auto" />
+              <div class="text-justify "> 
+                <p class=" text-lg-start text-center " sty>
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </p>
+              </div>
+              <p class="text-end mr-4 font-italic">-- Dr. Netravathi P S</p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+
+
+
+      <div class="container mt-4">
+        <h1 class="text-center fw-bold">
+          Testimonials
+        </h1>
+        <section class="mt-4">
+          <div class="row text-center">
+            <div class="col-md-12">
+              <!-- Carousel wrapper -->
+              <div id="carouselBasicExample" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+                <!-- Inner -->
+                <div class="carousel-inner">
+                  <!-- Single item -->
+                  <div class="carousel-item active">
+                    <p class="lead font-italic mx-4 mx-md-5">
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                      numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+                    </p>
+                    <div class="mt-5 mb-4">
+                      <img src="http://127.0.0.1:8000/static/img/Engineeringimage/Faculty/sidharth.png.jpg"
+                        class="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
+                        height="100" />
+                    </div>
+                    <p class="text-muted mb-0">- Anna Morian</p>
+                  </div>
+        
+                  <!-- Single item -->
+                  <div class="carousel-item">
+                    <p class="lead font-italic mx-4 mx-md-5">
+                      "good college, but not take addmission"
+                    </p>
+                    <div class="mt-5 mb-4">
+                      <img src="{% static '/img/Engineeringimage/Faculty/sidharth.png.jpg' %}"
+                        class="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
+                        height="100" />
+                    </div>
+                    <p class="text-muted mb-0">- sidharth vk</p>
+                  </div>
+        
+                  <!-- Single item -->
+                  <div class="carousel-item">
+                    <p class="lead font-italic mx-4 mx-md-5">
+                      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                      dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
+                      maiores."
+                    </p>
+                    <div class="mt-5 mb-4">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                        class="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
+                        height="100" />
+                    </div>
+                    <p class="text-muted mb-0">- Kate Allise</p>
+                  </div>
+                </div>
+                <!-- Inner -->
+        
+                <!-- Controls -->
+                <a class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
+                  data-mdb-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </a>
+                <a class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
+                  data-mdb-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+            </a>
+              </div>
+              <!-- Carousel wrapper -->
+            </div>
+          </div>
+        </section>
+      </div>
+      
+        
+    
     {% include 'footer.html' %}
   {% endblock %}

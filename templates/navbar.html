@@ -5,10 +5,10 @@
         <a  data-bs-toggle="collapse" class="navbar-toggler  mr-4" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="fas fa-bars"></span></a>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link active " href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active " href="{% url 'home' %}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#institute">Institute</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="pricing.html">About US</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About US</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
             </ul>
             {% if user.is_active %}
@@ -29,7 +29,7 @@
                     
                     class="rounded-circle"
                     height="40"
-                    alt="Black and White Portrait of a Man"
+                    alt="{{user.first_name}}"
                     loading="lazy"
                   />
                   

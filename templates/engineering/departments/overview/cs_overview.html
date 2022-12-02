@@ -116,7 +116,7 @@
                             {% for faculty in faculty  %}
                           <tr>
                             <td>
-                                <p class="fw-bold text-muted p-2">1</p>
+                                <p class="fw-bold text-muted p-2">{{forloop.counter}}</p>
                             </td>
                             <td>
                               <div class="d-flex align-items-center">
@@ -124,7 +124,7 @@
                                     src="{{faculty.image.url}}"
                                     class="rounded-circle"
                                     alt=""
-                                    style="width: 45px; height: 45px"
+                                    style="width: 55px; height: 60px"
                                     />
                                 <div class="ms-3">
                                   <p class="fw-bold mb-1">{{faculty.name}}</p>
@@ -143,6 +143,7 @@
                                       class="btn btn-link btn-rounded btn-sm fw-bold"
                                       data-mdb-ripple-color="dark"
                                       style="text-decoration: none;"
+                                      data-bs-toggle="modal" data-bs-target="#{{faculty|cut:"."|cut:" "}}"
                                       >
                                 view
                               </button>
@@ -518,7 +519,27 @@
         </div>
       </div>
 
+      {% for faculty in faculty  %}
+<!-- Modal -->
+<div class="modal fade" id="{{faculty|cut:"."|cut:" "}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">{{faculty.name}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+    </div>
+  </div>
 </div>
+{% endfor %}
+
+
+</div>
+
+
 
   {% include 'footer.html' %}
   {% endblock %}
